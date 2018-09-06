@@ -1,0 +1,15 @@
+#sidebar{
+  width: 80%;
+}
+mat-divider{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.product_image{
+  max-height: 100px;
+  max-width: 100px;
+}
+
+button{
+  width: 100%;
+}

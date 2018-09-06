@@ -1,0 +1,24 @@
+<mat-card *ngIf="product" id="sidebar">
+    <img mat-card-image class="product_image" src={{product.image}}/>
+    <mat-card-content>
+        <mat-card-header>{{product.title}}</mat-card-header>
+        <p>{{product.subtitle}}</p>
+        <mat-divider [inset]="true"></mat-divider>
+        <mat-chip-list>
+            <mat-chip *ngFor="let tag of product.tags">{{tag}}</mat-chip>
+        </mat-chip-list>
+        <mat-divider [inset]="true"></mat-divider>
+        <mat-list>
+            <mat-list-item>
+                <button mat-button>
+                    <mat-icon mat-list-icon>home</mat-icon>Overview
+                </button>
+            </mat-list-item>
+            <mat-list-item>
+                <button mat-button>
+                    <mat-icon mat-list-icon>insert_chart</mat-icon>Sales
+                </button>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

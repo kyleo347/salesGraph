@@ -1,0 +1,6 @@
+<mat-toolbar><img src="../assets/stackline.png"/></mat-toolbar>
+<div id="app-container">
+    <app-sidebar [product]="product | async"></app-sidebar>
+    <!-- <router-outlet [product]="product | async"></router-outlet> -->
+    <app-graph [product]="product | async"></app-graph>
+</div>
